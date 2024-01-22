@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    int a,i,n, fact=1,count=0;
+    printf("enter");
+    scanf("%d",&n);
+    int trail(int n)
+    {
+        //printf("in");
+        for(i=1;i<=n;i++)
+        {
+        fact=fact*i;
+      //  printf("for");
+        }
+        printf("%d\n",fact);
+        while(fact>0)
+        {
+            a=fact%10;
+            fact=fact/10;
+            //printf("%d\n",a);
+            if(a==0)
+            count++;
+            //printf("%d\n",count);
+        }
+    printf("%d\n",count);
+   } trail(n);
+    return 0;
+   }
